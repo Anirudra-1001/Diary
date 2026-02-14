@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💖 Digital Diary 💖</title>
+<link rel="stylesheet" href="style.css">
+<!-- jsPDF for PDF download -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>💖 Digital Diary 💖</h1>
+
+    <!-- Theme Toggle -->
+    <button id="themeBtn">Switch to Dark Mode</button>
+
+    <!-- Category / Tags -->
+    <select id="categorySelect">
+        <option value="Personal">Personal</option>
+        <option value="Work">Work</option>
+        <option value="Ideas">Ideas</option>
+    </select>
+
+    <!-- Diary Inputs -->
+    <input type="text" id="titleInput" placeholder="Title">
+    <textarea id="contentInput" placeholder="Write your diary here..."></textarea>
+    <button id="addBtn">Add Entry</button>
+
+    <!-- Search & PDF -->
+    <input type="text" id="searchInput" placeholder="Search entries...">
+    <button id="downloadBtn">Download PDF</button>
+
+    <!-- Entries will appear here -->
+    <div id="entries"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
